@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run ConnectDatabase",
+            "type": "shell",
+            "command": "cd src && javac -cp \".;mssql-jdbc-12.10.0.jre11.jar\" ConnectDatabase.java && java -cp \".;mssql-jdbc-12.10.0.jre11.jar\" ConnectDatabase",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
